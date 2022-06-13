@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Karla:wght@300&family=Montserrat:wght@100&family=Open+Sans&family=PT+Serif&family=Redressed&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Karla:wght@300&family=Montserrat:wght@100&family=Open+Sans&family=PT+Serif&family=Poppins:wght@100&family=Redressed&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Karla:wght@300&family=Montserrat:wght@100&family=Open+Sans&family=PT+Serif&family=Poppins:wght@100;400&family=Redressed&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(235, 241, 246);
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(180, 200, 201);
+    padding: 15px;
+}
+.fa-plus{
+    cursor: pointer;
+    transition: transform .7s ease-in-out;
+}
+
+.fa-plus:hover{
+ transform: rotate(360deg);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    justify-content: center;
+    align-items: center;
+    grid-gap:40px;
+    margin-top:3rem;
+
+}
+.book{
+    box-shadow:  rgba(0, 0, 0, 0.16) 0px 1px 4px;;
+    height: 400px;
+    padding: 15px;
+    padding-right: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 10px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* font-weight: bold; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    background-color: white;
+   
+
+}
+#done{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #a0fda0;
+    width: 100%;
+    cursor:pointer;
+}
+#not_done{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #f97c43;
+    width: 100%;
+    cursor:pointer;
+}
+.element{
+    font-weight: bolder;
+    text-align: center;
+}
+#delete{
+    background: #d76c4b;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    /* background: #a0fda0; */
+    width: 100%;
+    cursor: pointer;
+}
+#done:hover{
+    background-color: #11fc11;
+}
+#not_done:hover{
+    background-color: #e65d34;
+}
+#delete:hover{
+    background-color:#e24b1d;
+}
+.New-book{
+    margin: 88px;
+    display: none;
+}
