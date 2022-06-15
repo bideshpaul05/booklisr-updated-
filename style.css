@@ -30,8 +30,12 @@ body{
     grid-template-columns: repeat(3,350px);
     justify-content: center;
     align-items: center;
-    grid-gap:40px;
-    margin-top:3rem;
+    grid-gap: 40px;
+    margin-top: 3rem;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; */
 
 }
 .book{
@@ -50,6 +54,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     background-color: white;
+    margin: 1rem;
    
 
 }
@@ -97,4 +102,28 @@ body{
 .New-book{
     margin: 88px;
     display: none;
+}
+@media (max-width: 1200px)
+{
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,350px);
+        justify-content: center;
+        align-items: center;
+        grid-gap:40px;
+        margin-top:3rem;
+    }
+
+}
+@media (max-width: 800px)
+{
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,350px);
+        justify-content: center;
+        align-items: center;
+        grid-gap:40px;
+        margin-top:3rem;
+    }
+
 }
